@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#103b2c">
+  <meta name="description" content="WycTech Solutions offers livestreaming, photography, videography and screen projection for events, birthdays, weddings, burials and farewell ceremonies.">
+  <title>WycTech Solutions | Video & Technology</title>
+  <style>
+    :root{--forest:#103b2c;--green:#1d6848;--lime:#c8f169;--ink:#102019;--muted:#617269;--paper:#f5f8f4;--white:#fff}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+    header{background:rgba(16,59,44,.97);color:#fff;position:sticky;top:0;z-index:5;border-bottom:1px solid #ffffff20}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 0}.brand{font-size:1.2rem;font-weight:800;letter-spacing:.4px}.brand span{color:var(--lime)}
+    nav{display:flex;gap:22px;align-items:center;font-size:.93rem}nav a:hover{color:var(--lime)}.nav-cta{background:var(--lime);color:var(--forest);padding:9px 15px;border-radius:999px;font-weight:700}
+    .hero{background:radial-gradient(circle at 80% 20%,#287a50 0,transparent 32%),linear-gradient(125deg,#0a2119,#103b2c 60%,#174c35);color:#fff;overflow:hidden}
+    .hero-grid{min-height:560px;display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:34px;padding:72px 0}
+    .eyebrow{display:inline-flex;gap:9px;align-items:center;color:var(--lime);font-size:.8rem;font-weight:800;letter-spacing:2px;text-transform:uppercase}.dot{width:8px;height:8px;background:var(--lime);border-radius:50%}
+    h1{font-size:clamp(2.8rem,6vw,5.2rem);line-height:1.02;letter-spacing:-2px;margin:18px 0}.hero h1 span{color:var(--lime)}.hero p{max-width:580px;color:#d7e5dc;font-size:1.08rem}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.btn{display:inline-block;padding:13px 19px;border-radius:9px;font-weight:800}.btn-primary{background:var(--lime);color:var(--forest)}.btn-outline{border:1px solid #ffffff70;color:#fff}.btn:hover{transform:translateY(-1px)}
+    .camera-art{min-height:350px;display:grid;place-items:center;position:relative}.orbit{width:min(390px,90%);aspect-ratio:1;border:1px solid #c8f16955;border-radius:50%;display:grid;place-items:center;position:relative}.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid #c8f16935;border-radius:50%}.orbit:before{inset:28px}.orbit:after{inset:58px}.camera{z-index:1;width:76%;filter:drop-shadow(0 24px 30px #0007)}.camera-label{position:absolute;bottom:5%;right:0;background:#ffffff12;border:1px solid #ffffff2b;backdrop-filter:blur(8px);padding:12px 16px;border-radius:12px;font-size:.85rem;color:#e4f2e9}
+    section{padding:76px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 38px}.kicker{color:var(--green);font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:2px}.section-head h2{font-size:clamp(2rem,4vw,3rem);line-height:1.1;margin:10px 0 14px;letter-spacing:-1px}.section-head p{color:var(--muted);margin:0}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid #e3ebe3;border-radius:18px;padding:25px;box-shadow:0 8px 25px #163d2510}.icon{width:48px;height:48px;border-radius:13px;background:#e8f4e9;display:grid;place-items:center;font-size:1.5rem}.card h3{margin:18px 0 8px}.card p{margin:0;color:var(--muted);font-size:.96rem}
+    .portfolio{background:#eaf1e9}.portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.project{min-height:210px;border-radius:17px;padding:22px;display:flex;flex-direction:column;justify-content:flex-end;color:#fff;overflow:hidden;position:relative;background:linear-gradient(145deg,#194b36,#0c241a)}.project:nth-child(2){background:linear-gradient(145deg,#6b7e47,#203d2c)}.project:nth-child(3){background:linear-gradient(145deg,#315b61,#102d35)}.project:before{content:"";position:absolute;width:180px;height:180px;border:1px solid #ffffff35;border-radius:50%;right:-45px;top:-55px}.project:after{content:"";position:absolute;width:120px;height:120px;border:1px solid #ffffff35;border-radius:50%;right:-15px;top:-25px}.project>*{position:relative}.project .emoji{font-size:2rem;margin-bottom:auto}.project h3{margin:22px 0 4px}.project p{margin:0;color:#e0e9e2;font-size:.9rem}
+    .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:45px;align-items:center}.about-box{background:var(--forest);color:#fff;padding:32px;border-radius:20px}.about-box strong{font-size:2.2rem;color:var(--lime);display:block}.about-box p{color:#d8e6dc}.about-copy h2{font-size:clamp(2rem,4vw,3rem);line-height:1.1;margin:10px 0}.about-copy p{color:var(--muted)}.checks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}.checks span{font-weight:700;font-size:.92rem}.checks span:before{content:"✓";color:var(--green);margin-right:8px}
+    .contact{background:var(--forest);color:#fff}.contact .section-head p{color:#d1e0d6}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}.contact-panel{background:#ffffff0c;border:1px solid #ffffff20;padding:28px;border-radius:18px}.contact-panel h3{margin-top:0}.contact-panel p{color:#d1e0d6}.contact-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}.contact .btn-outline{border-color:#ffffff55}.note{font-size:.83rem;color:#afc6b7!important;margin-top:20px}
+    footer{background:#092017;color:#c6d6cb;padding:22px 0;font-size:.88rem}.footer-row{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    @media(max-width:760px){nav{gap:12px}nav a:not(.nav-cta){display:none}.hero-grid{grid-template-columns:1fr;padding:60px 0 35px}.hero{ text-align:center}.hero p{margin-inline:auto}.actions{justify-content:center}.camera-art{min-height:270px}.services,.portfolio-grid{grid-template-columns:1fr}.about-grid,.contact-grid{grid-template-columns:1fr}.about-box{order:2}.checks{grid-template-columns:1fr 1fr}section{padding:58px 0}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#home">Wyc<span>Tech</span> Solutions</a>
+      <nav aria-label="Main navigation"><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#about">About</a><a class="nav-cta" href="#contact">Contact us</a></nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow"><span class="dot"></span> Livestreaming • Photography • Videography • Screen Projection</div>
+          <h1>Capture the moment.<br><span>Tell the story.</span></h1>
+          <p>Welcome to WycTech Solutions — your media partner for livestreaming, photography, videography and screen projection for life’s important occasions.</p>
+          <div class="actions"><a class="btn btn-primary" href="#contact">Let's work together ↗</a><a class="btn btn-outline" href="#services">Explore services</a></div>
+        </div>
+        <div class="camera-art" aria-label="Illustration of a video camera">
+          <div class="orbit">
+            <svg class="camera" viewBox="0 0 420 300" role="img" aria-label="Camera illustration">
+              <defs><linearGradient id="body" x1="0" x2="1"><stop stop-color="#26362e"/><stop offset="1" stop-color="#607568"/></linearGradient><linearGradient id="lens" x1="0" x2="1"><stop stop-color="#101b18"/><stop offset=".5" stop-color="#5c8b75"/><stop offset="1" stop-color="#101b18"/></linearGradient></defs>
+              <path d="M68 90 L145 90 L170 58 L245 58 L270 92 L306 92 Q326 92 326 112 L326 218 Q326 236 307 236 L67 236 Q48 236 48 217 L48 111 Q48 90 68 90Z" fill="url(#body)" stroke="#a5c4ad" stroke-width="4"/>
+              <path d="M83 90 L92 69 L143 69 L155 90" fill="#263a30" stroke="#a5c4ad" stroke-width="4"/>
+              <rect x="76" y="110" width="95" height="61" rx="7" fill="#101b18" stroke="#8ca995" stroke-width="3"/><rect x="87" y="120" width="73" height="41" rx="3" fill="#263f32"/>
+              <path d="M326 120 L366 102 L385 113 L385 204 L366 216 L326 198Z" fill="#2a4035" stroke="#a5c4ad" stroke-width="4"/>
+              <circle cx="252" cy="164" r="76" fill="#15251d" stroke="#a5c4ad" stroke-width="5"/><circle cx="252" cy="164" r="59" fill="url(#lens)" stroke="#526f5c" stroke-width="5"/><circle cx="252" cy="164" r="39" fill="#142b21" stroke="#9fbd9f" stroke-width="3"/><circle cx="252" cy="164" r="20" fill="#47745b"/><circle cx="244" cy="156" r="8" fill="#c8f169" opacity=".8"/>
+              <rect x="184" y="74" width="47" height="15" rx="5" fill="#c8f169"/><circle cx="111" cy="190" r="8" fill="#c8f169"/><path d="M72 250 L303 250" stroke="#c8f169" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+          </div><div class="camera-label">Creative vision. Reliable technology.</div>
+        </div>
+      </div>
+    </section>
+    <section id="services">
+      <div class="wrap"><div class="section-head"><div class="kicker">What we do</div><h2>Services that bring your ideas to life</h2><p>Media services for celebrations, ceremonies and important gatherings.</p></div>
+        <div class="services">
+          <article class="card"><div class="icon">📡</div><h3>Livestreaming</h3><p>Live coverage to help family, friends and audiences follow your event from wherever they are.</p></article>
+          <article class="card"><div class="icon">📷</div><h3>Photography</h3><p>Capture special moments with event photography for birthdays, weddings and other occasions.</p></article>
+          <article class="card"><div class="icon">🎥</div><h3>Videography</h3><p>Professional event video coverage to preserve the highlights and memories of your occasion.</p></article>
+          <article class="card"><div class="icon">🖥️</div><h3>Screen Projection</h3><p>Projection support for presentations, video playback and shared viewing at events.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+      <div class="wrap"><div class="section-head"><div class="kicker">Our work</div><h2>Covering the moments that matter</h2><p>We provide media coverage for a wide range of events and ceremonies.</p></div>
+        <div class="portfolio-grid">
+          <article class="project"><div class="emoji">🎂</div><h3>Birthdays & Events</h3><p>Photography, video and livestream coverage</p></article>
+          <article class="project"><div class="emoji">💍</div><h3>Wedding Ceremonies</h3><p>Keep the memories of your special day</p></article>
+          <article class="project"><div class="emoji">🕊️</div><h3>Burial & Farewell</h3><p>Respectful coverage and screen projection</p></article>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="wrap about-grid">
+        <div class="about-box"><strong>WycTech</strong><h3>Creative thinking. Practical solutions.</h3><p>We help people share important moments through dependable event media services.</p></div>
+        <div class="about-copy"><div class="kicker">About WycTech Solutions</div><h2>Your vision, our creative approach.</h2><p>WycTech Solutions provides livestreaming, photography, videography and screen projection for events, birthdays, wedding ceremonies, burials and farewell services. We aim to capture moments clearly and help audiences share in each occasion.</p><div class="checks"><span>Friendly service</span><span>Creative approach</span><span>Quality-focused work</span><span>Solutions tailored to you</span></div></div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="wrap"><div class="section-head"><div class="kicker" style="color:var(--lime)">Get in touch</div><h2>Have a project in mind?</h2><p>Tell us what you need and let's plan the next step together.</p></div>
+        <div class="contact-grid"><div class="contact-panel"><h3>Let's connect</h3><p>For bookings and enquiries, call or WhatsApp us, or send an email. We would be glad to discuss your event requirements.</p><div class="contact-links"><a class="btn btn-primary" href="https://wa.me/254715031192" target="_blank" rel="noopener">WhatsApp us</a><a class="btn btn-outline" href="tel:+254715031192">Call us</a><a class="btn btn-outline" href="mailto:osiakowycliffe39@gmail.com">Email us</a></div><p><strong>Phone / WhatsApp:</strong> +254 715 031 192<br><strong>Email:</strong> osiakowycliffe39@gmail.com</p></div>
+          <div class="contact-panel"><h3>Find us online</h3><p>Visit our YouTube channel to explore our videos and media work.</p><p><strong>YouTube:</strong><br><a href="https://youtube.com/@wycliffetechsolutions254?si=33B_eLKKG2nUOLGm" target="_blank" rel="noopener">Wycliffe Tech Solutions ↗</a></p><p class="note">Contact us to discuss availability and bookings for your occasion.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap footer-row"><span>© <span id="year"></span> WycTech Solutions. All rights reserved.</span><span>Livestreaming • Photography • Videography • Screen Projection</span></div></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
